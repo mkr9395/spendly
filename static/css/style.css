@@ -508,6 +508,67 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ------------------------------------------------------------------ */
+/* Terms page                                                          */
+/* ------------------------------------------------------------------ */
+
+.terms {
+    padding: 4rem 2rem 5rem;
+}
+
+.terms-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.terms-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+}
+
+.terms-title em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.terms-updated {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-bottom: 2rem;
+}
+
+.terms-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+}
+
+.terms-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin: 2rem 0 0.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-soft);
+}
+
+.terms-card h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.terms-card p {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+}
+
+/* ------------------------------------------------------------------ */
 /* Responsive                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -527,4 +588,6 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 600px) {
     .nav-links a:not(.nav-cta) { display: none; }
     .hero { padding: 3rem 1rem 2rem; }
+    .terms { padding: 2.5rem 1rem 3rem; }
+    .terms-card { padding: 1.5rem; }
 }
